@@ -7,9 +7,8 @@ class Ticker(models.Model):
     """Ticker table"""
     ticker = models.CharField(max_length=80, primary_key=True)
 
-    def get_all(self):
-        """Return all the ticker"""
-        return self.ticker
+    def __str__(self):
+        return str(self.ticker)
 
 class News (models.Model):
     """News table"""

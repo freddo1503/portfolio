@@ -55,5 +55,11 @@ def table_ticker(request):
 @login_required
 def table_news(request):
     return render(request,'admin/table-news.html',{
-        "tickers": Ticker.objects.all()
+        "News": News.objects.values()
+    })
+
+@login_required
+def table_tweets(request):
+    return render(request,'admin/table-tweets.html',{
+        "News": News.objects.values()
     })
