@@ -1,4 +1,4 @@
-# This project is a portfolio for data engineering projects
+# Django project for data engineering projects
 
 
 Development
